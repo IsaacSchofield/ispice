@@ -1,0 +1,43 @@
+body{
+	background-color:#EB9300;
+}
+#navbar{
+	width:100%;
+	height:10%;
+	background-color:#EB1B00;
+	top:0px;
+	left:0px;
+	position:fixed;
+	display:flex;
+}
+.navel{
+	text-align:center;
+	vertical-align:middle;
+	background-color:#EB1B00;
+	font-family:'Corbel','Century Gothic','Segoe UI','MS Sans Serif','Arial';
+	float:top;
+	flex-grow:1;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	cursor:default;
+}
+@keyframes navelhover{
+	0%{
+	background-color:#EB1B00;
+	flex-grow:1;
+}
+	100%{
+	background-color:#EBBB00;
+	flex-grow:2;
+	filter:blur(5px);
+}
+}
+.navel:hover{
+	animation:navelhover 0.25s forwards;
+}
+#intro{
+	width:100%;
+	height:70%;
+	background-color:red;
+	position:relative;
+}
