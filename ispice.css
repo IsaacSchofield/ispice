@@ -39,10 +39,10 @@ body{
 }
 #intro{
 	width:100vw;
-	height:80vh;
+	height:90vh;
 	background-image:url("assets/mad jo in van.jpg");
 	background-attachment:fixed;
-	background-size:100%;
+	background-size:110%;
 }
 .picpage{
 	width:100%;
@@ -52,14 +52,27 @@ body{
 	border-bottom:solid black 3px;
 	overflow: hidden;
 }
-.picpage img{
+.picpage .wrap{
 	width:60%;
-	height:auto;
+	height: calc(100% + 10px);
+	padding:0px;
+	margin:-5px;
+	overflow-y: hidden;
 }
-.picpage.R{float:left}
-.picpage.R img{float:right;}
-.picpage.L{float:right}
-.picpage.L img{float:left;}
+.wrap img{
+	height:95vh;
+	width: auto;
+	position:relative;
+	top:0px;
+	padding:0px;
+	margin:0px;
+}
+.R.wrap img{ left:0px; }
+.L.wrap img{ right:0px; }
+.picpage.R *{float:left; margin-left: 10px;}
+.picpage.R .wrap{float:right;}
+.picpage.L *{float:right; margin-right:35px;}
+.picpage.L .wrap{float:left;}
 .twitter-follow-button{
 	cursor:default;
 	-webkit-user-select:none;
