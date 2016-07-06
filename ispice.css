@@ -31,17 +31,16 @@ body{
 	0%{
 	background-color:#EB1B00;
 	flex-grow:1;
-}
+	}
 	100%{
 	background-color:#EBBB00;
 	flex-grow:2;
 	filter:blur(5px);
-}
+	}
 }
 .navel:hover{
 	animation:navelhover 0.25s forwards;
 }
-
 #main_container{
 	margin-top:80px;
 	width:100vw;
@@ -51,5 +50,14 @@ body{
 	height:90vh;
 	background-color:red;
 	padding:5px;
-	/*border:solid black 3px;*/
+	border-bottom:solid black 3px;
+	overflow: hidden;
 }
+.picpage img{
+	width:60%;
+	height:auto;
+}
+.picpage.R{float:left}
+.picpage.R img{float:right;}
+.picpage.L{float:right}
+.picpage.L img{float:left;}
