@@ -26,20 +26,12 @@ body{
 	-webkit-user-select:none;
 	-moz-user-select:none;
 	cursor:default;
+	transition: 0.5s;
 }
-@keyframes navelhover{
-	0%{
-	background-color:#EB1B00;
-	flex-grow:1;
-	}
-	100%{
+.navel:hover{
 	background-color:#EBBB00;
 	flex-grow:2;
 	filter:blur(5px);
-	}
-}
-.navel:hover{
-	animation:navelhover 0.25s forwards;
 }
 #main_container{
 	margin-top:80px;
@@ -61,3 +53,8 @@ body{
 .picpage.R img{float:right;}
 .picpage.L{float:right}
 .picpage.L img{float:left;}
+.twitter-follow-button{
+	cursor:default;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+}
