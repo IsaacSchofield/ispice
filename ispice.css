@@ -52,14 +52,27 @@ body{
 	border-bottom:solid black 3px;
 	overflow: hidden;
 }
-.picpage img{
+.picpage .wrap{
 	width:60%;
-	height:auto;
+	height: calc(100% + 10px);
+	padding:0px;
+	margin:-5px;
+	overflow-y: hidden;
 }
+.wrap img{
+	height:95vh;
+	width: auto;
+	position:relative;
+	top:0px;
+	padding:0px;
+	margin:0px;
+}
+.R.wrap img{ left:0px; }
+.L.wrap img{ right:0px; }
 .picpage.R *{float:left; margin-left: 10px;}
-.picpage.R img{float:right;}
+.picpage.R .wrap{float:right;}
 .picpage.L *{float:right; margin-right:35px;}
-.picpage.L img{float:left;}
+.picpage.L .wrap{float:left;}
 .twitter-follow-button{
 	cursor:default;
 	-webkit-user-select:none;
