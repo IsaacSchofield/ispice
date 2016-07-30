@@ -9,7 +9,7 @@ body{
 #navbar{
 	width:100vw;
 	height:80px;
-	background-color:#EB1B00;
+	background-color:#931311;
 	top:0px;
 	left:0px;
 	position:fixed;
@@ -19,10 +19,9 @@ body{
 .navel{
 	text-align:center;
 	vertical-align:middle;
-	background-color:#EB1B00;
+	background-color:#931311;
 	font-family:'LanePosh';
 	font-size:17px;
-	float:top;
 	font-weight:lighter;
 	flex-grow:1;
 	-webkit-user-select:none;
@@ -31,9 +30,35 @@ body{
 	transition: 0.5s;
 }
 .navel:hover{
-	background-color:#EBBB00;
+	background-color:red;
 	flex-grow:2;
 	font-weight:bold;
+}
+#scrollrem{
+	position:fixed;
+	height:10vh;
+	width:100vw;
+	bottom:0px;
+	left:0px;
+	opacity:0.6;
+	z-index:1;
+	background-color:#4E4545;
+}
+#scrollrem-overlay{
+	position:fixed;
+	vertical-align:middle;
+	height:10vh;
+	width:100vw;
+	bottom:0px;
+	left:0px;
+	z-index:1;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	cursor:default;
+	font-size:17px;
+	letter-spacing:8px;
+	text-align:center;
+	color:white;
 }
 #main_container{
 	margin-top:80px;
@@ -48,6 +73,8 @@ body{
 	background-blend-mode:lighten;
 	-webkit-filter:saturate(50%);
 	filter:saturate(50%);
+	color:white;
+	text-align:center;
 }
 .picpage{
 	width:100%;
