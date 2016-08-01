@@ -19,7 +19,7 @@ body{
 .navel{
 	text-align:center;
 	vertical-align:middle;
-	background-color:#931311;
+	background-color:#DA3E00;
 	font-family:'LanePosh';
 	color:black!important;
 	font-size:17px;
@@ -31,7 +31,7 @@ body{
 	transition: 0.5s;
 }
 .navel:hover{
-	background-color:red;
+	background-color:#00C36F;
 	flex-grow:2;
 	font-weight:bold;
 }
@@ -81,7 +81,9 @@ body{
 }
 #events{
 	background-image:url('assets/serving_customer.jpg');
-	background-color:#818100
+	background-color:#8033AB;
+	-webkit-filter:saturate(75%);
+	filter:saturate(75%);
 }
 #catering{
 	background-image:url('assets/mad jo in van.jpg');
