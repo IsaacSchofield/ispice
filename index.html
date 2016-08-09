@@ -8,10 +8,10 @@
 		<script src='scripts/jquery.min.js'></script>
 		<script src='scripts/scrollto.min.js'></script>
 		<script src='scripts/t-widgets.js'></script>
-		<script src='scripts/ispice.js'></script>
+		
 	</head>
 	<body>
-
+		<script src='scripts/ispice.js'></script>
 		<div id='main_container'>
 
 			<div id='intro'class='picpage'>
@@ -41,10 +41,10 @@
 		</div>
 
 		<div id='navbar'>
-			<div id='navhome'class='navel'><h2>home</h2></div>
-			<div id='navevents'class='navel'><h2>events</h2></div>
-			<div id='navinfo'class='navel'><h2>catering</h2></div>
-			<div id='navvisit'class='navel'><h2>visit us</h2></div>
+			<div id='navhome'class='navel'onclick='smoothScroll(&quot;#intro&quot;)'><h2>home</h2></div>
+			<div id='navevents'class='navel'onclick='smoothScroll(&quot;#events&quot;)'><h2>events</h2></div>
+			<div id='navinfo'class='navel'onclick='smoothScroll(&quot;#catering&quot;)'><h2>catering</h2></div>
+			<div id='navvisit'class='navel'onclick='smoothScroll(&quot;#visit&quot;)'><h2>visit us</h2></div>
 		</div>
 
 	</body>

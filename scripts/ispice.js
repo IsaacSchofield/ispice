@@ -1,7 +1,22 @@
-$(document).ready(function(){
-  $('#scrollrem').delay(4000).fadeOut(3000);
-  $('#scrollrem-overlay').delay(4000).fadeOut(3000);
+var scrolled = false;
+$(document).scroll(function() {
+  if(!scrolled){
+	scrolled = true;
+	console.log("scrolled!");
+	$('#scrollrem').delay(500).slideUp(1000);
+	$('#scrollrem-overlay').delay(500).slideUp(1000);
+  }
 });
-$('#navhome').click(function(){
-  $(window).scrollTo('500px');
+
+
+var recentScroll = false;
+$(document).scroll(function() {
+  if(!recentScroll){
+	recentScroll = true;
+  };
 });
+
+function smoothScroll(elt){
+	console.log($(elt).offset().top-80);
+	$('html, body').animate({scrollTop: $(elt).offset().top-80}, 500);
+}
