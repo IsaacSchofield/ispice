@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset=utf-8">
+		<meta charset='utf-8'>
 		<title>Ispice Catering</title>
-		<link rel="shortcut icon" type="image/x-icon" href="ispicefav.ico"/>
-		<link rel="stylesheet" type="text/css" href="ispice.css"/>
+		<link rel='shortcut icon'type='image/x-icon'href='ispicefav.ico'/>
+		<link rel='stylesheet'type='text/css'href='ispice.css'/>
+		<script src='scripts/jquery.min.js'></script>
+		<script src='scripts/scrollto.min.js'></script>
+		<script src='scripts/t-widgets.js'></script>
+		
 	</head>
 	<body>
+		<script src='scripts/ispice.js'></script>
+		<div id='main_container'>
 
-		<div id="main_container">
-			<div id="intro" class="picpage FULL">
-				<div class="static">
-					<h1>ispice</h1>
-					<p>sample text</p>
-					<a href="https://twitter.com/ispiceHB" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @ispiceHB</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-				</div>
+			<div id='intro'class='picpage'>
+					<p style='font-size:150px;margin:75px;'>ispice Catering</p>
+					<p>sample text<br><br></p>
 			</div>
-			
-			<div id="markets" class="picpage R">
-				<h3>Markets</h3>
-				<img src="assets/serving_customer.jpg"></img>
+
+			<div id='scrollrem'></div>
+			<div id='scrollrem-overlay'><h2>SCROLL DOWN FOR MORE</h2></div>
+
+			<div id='events'class='picpage'>
+				<p class='picpage-title'style='color:#FFFF00'>events</p>
+				<a class="twitter-timeline" data-width="300" data-height="500" data-link-color="#931311" href="https://twitter.com/IspiceHB">Tweets by IspiceHB</a>
 			</div>
-			
-			<div id="events" class="picpage L">
-				<h3>Events</h3>
-				<img src="assets/open van.jpg"></img>
+
+			<div id='catering'class='picpage'>
+				<p class='picpage-title pr'style='color:#FF9700;float:right'>catering</p>
 			</div>
-			
-			<div id="catering" class="picpage R">
-				<h3>Catering</h3>
+
+			<div id='visit'class='picpage'>
+				<p class='picpage-title'style='color:#C7F900;float:right'>visit us</p>
 			</div>
-			
-			<div id="weddings" class="picpage L">
-				<h3>Weddings</h3>
-			</div>
-			
-			<div id="recipies" class="picpage R">
-				<h3>Recipies</h3>
-			</div>
-			
-			<div id="jargon" class="basebar">
-				<h5>Legal Jargon</h5>
+
+			<div id='jargon'class='picpage'>
+				<p class='picpage-title'style='color:#D40DD3;font-size:50px!important'>the small print</p>
 			</div>
 		</div>
-		
-		<div id="navbar">
-			<div class="navel">
-				<h2>HOME</h2>
-			</div>
-			<div class="navel">
-				<h2>EVENTS</h2>
-			</div>
-			<div class="navel">
-				<h2>INFO</h2>
-			</div>
-			<div class="navel">
-				<h2>VISIT US</h2>
-			</div>
+
+		<div id='navbar'>
+			<div id='navhome'class='navel'onclick='smoothScroll(&quot;#intro&quot;)'><h2>Home</h2></div>
+			<div id='navevents'class='navel'onclick='smoothScroll(&quot;#events&quot;)'><h2>Events</h2></div>
+			<div id='navinfo'class='navel'onclick='smoothScroll(&quot;#catering&quot;)'><h2>Catering</h2></div>
+			<div id='navvisit'class='navel'onclick='smoothScroll(&quot;#visit&quot;)'><h2>Visit us</h2></div>
 		</div>
-		
+
 	</body>
 </html>
